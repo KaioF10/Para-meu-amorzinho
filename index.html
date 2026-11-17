@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Para o meu amor 💗</title>
+<meta name="theme-color" content="#ffd6e5">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Meu Amor">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="floaters" aria-hidden="true"></div>
+
+<nav id="nav" aria-label="Seções">
+  <a href="#inicio">Início</a><a href="#historia">Nossa História</a><a href="#motivos">10 Motivos</a>
+  <a href="#memorias">Memórias</a><a href="#carta">Carta</a><a href="#futuro">Futuro</a>
+</nav>
+
+<header id="inicio" class="hero">
+  <div class="bow">🎀</div>
+  <p class="small">com carinho, para</p>
+  <h1>Para o meu amor</h1>
+  <p class="name">Débora <span id="secret-star" role="button" tabindex="0" aria-label="Um segredo">✦</span></p>
+  <p class="sub">Um pedacinho de mim, feito só para você.</p>
+  <a class="btn" href="#historia">Abrir meu presente 🌸</a>
+</header>
+
+<!-- ================= NOSSA HISTÓRIA (edite os textos) ================= -->
+<section id="historia">
+  <h2>Nossa História</h2>
+  <p class="lead">Cada grande amor começa com um pequeno momento.</p>
+  <ol class="timeline">
+    <li><span class="dot">🌸</span><h3>O começo</h3><p>Tudo começou na formatura, quando conheci você e levei os docinhos para você. Um gesto simples que, sem eu saber, era o início de tudo.</p></li>
+    <li><span class="dot">💗</span><h3>Quando percebi</h3><p>Quando me dei conta, eu já estava falando com você todos os dias e não queria mais parar.</p></li>
+    <li><span class="dot">✨</span><h3>Hoje</h3><p>Cada dia ao seu lado é uma nova página, escrita com carinho, cuidado e muito amor.</p></li>
+  </ol>
+</section>
+
+<!-- ================= 10 MOTIVOS ================= -->
+<section id="motivos">
+  <h2>10 Motivos para te amar</h2>
+  <p class="lead">Toque em cada envelope para abrir. <b id="count">0</b> de 10 abertos.</p>
+  <div class="envs" id="envs"></div>
+</section>
+
+<!-- ================= NOSSAS MEMÓRIAS ================= -->
+<section id="memorias">
+  <h2>Nossas Memórias</h2>
+  <p class="lead">Momentos pequenos que viraram lembranças enormes.</p>
+  <div id="editbar" hidden>
+    <button class="btn small-btn" id="toggle-edit">✎ Editar legendas e fotos</button>
+    <span>Modo edição: toque na legenda para escrever. Toque na foto para escolher (prévia temporária).</span>
+  </div>
+  <div class="polas" id="polas"></div>
+</section>
+
+<!-- ================= UMA CARTA PARA VOCÊ (edite o texto) ================= -->
+<section id="carta">
+  <h2>Uma Carta para Você</h2>
+  <article class="paper">
+    <p>Meu amorzinho,</p>
+    <p>to escrevendo isso com muito carinho e espero que você goste. Quero que saiba que eu te amo muito e quero compartilhar vários momentos especiais com você.</p>
+    <p>Você significa muito pra mim e quero que você saiba disso, sei que as vezes eu sou chato e não sei demonstrar direito mas eu garanto pra você que vou fazer de tudo para te ver feliz, se você está bem eu também fico feliz, um dia escutei uma frase que dizia “Happy wife, happy life” e faz o total sentido, minha garotinha, eu te amo muito.</p>
+  </article>
+</section>
+
+<!-- ================= NOSSO FUTURO (seção final) ================= -->
+<section id="futuro">
+  <div class="stars" aria-hidden="true"></div>
+  <h2>Nosso Futuro</h2>
+  <div class="future">
+    <p class="fx">Meu amor, isso é só o começo...</p>
+    <p class="fx">Ainda temos um longo futuro pela frente, muitos momentos para viver, sonhos para realizar, lugares para conhecer e histórias para construir.</p>
+    <p class="fx">Quero continuar descobrindo cada detalhe seu, acompanhando suas conquistas, segurando sua mão nos dias difíceis e comemorando cada felicidade ao seu lado.</p>
+    <p class="fx forever">Quero que seja para toda a vida.</p>
+    <p class="fx final">Com todo o meu amor, para você. ❤️</p>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lb" hidden role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <button id="lb-close" aria-label="Fechar">✕</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+</div>
+
+<!-- Easter egg: calendário secreto -->
+<div id="egg" hidden role="dialog" aria-modal="true" aria-label="Calendário secreto">
+  <div class="egg-box">
+    <p id="egg-q">Tem um dia especial escondido aqui. Consegue encontrar? 💗</p>
+    <div class="cal" id="cal"></div>
+    <div id="egg-msg"></div>
+    <button class="link" id="egg-x">fechar</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
